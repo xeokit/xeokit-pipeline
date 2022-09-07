@@ -116,13 +116,13 @@ const configs = JSON.parse(configsData);
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/${fileName}/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
-| [.xkt](viewModel.html?src=converted/${fileName}/community1/model.xkt) | [Community Pipeline 1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.xkt) |
-| [.xkt](viewModel.html?src=converted/${fileName}/community2/model.xkt) | [Community Pipeline 2](${communityPipeline2Docs}) | [Log](converted/${fileName}/community2/log.xkt) |
-| [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline 1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.xkt) |
-| [.glb](viewModel.html?src=converted/${fileName}/community1/model.glb) | [Community Pipeline 1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.xkt) |
-| [.glb](viewModel.html?src=converted/${fileName}/enterprise1/model.glb) | [Enterprise Pipeline 1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.xkt) |
-| [.glb + .json](viewModel.html?src=converted/${fileName}/community1/model.glb&metaModelSrc=converted/${fileName}/community1/model.json) | [Community Pipeline 1](${communityPipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.xkt) |
-| [.glb + .json](viewModel.html?src=converted/${fileName}/enterprise1/model.glb&metaModelSrc=converted/${fileName}/enterprise1/model.json) | [Enterprise Pipeline 1](${enterprisePipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.xkt) |`);
+| [.xkt](viewModel.html?src=converted/${fileName}/community1/model.xkt) | [Community Pipeline 1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
+| [.xkt](viewModel.html?src=converted/${fileName}/community2/model.xkt) | [Community Pipeline 2](${communityPipeline2Docs}) | [Log](converted/${fileName}/community2/log.txt) |
+| [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline 1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
+| [.glb](viewModel.html?src=converted/${fileName}/community1/model.glb) | [Community Pipeline 1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
+| [.glb](viewModel.html?src=converted/${fileName}/enterprise1/model.glb) | [Enterprise Pipeline 1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
+| [.glb + .json](viewModel.html?src=converted/${fileName}/community1/model.glb&metaModelSrc=converted/${fileName}/community1/model.json) | [Community Pipeline 1](${communityPipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |
+| [.glb + .json](viewModel.html?src=converted/${fileName}/enterprise1/model.glb&metaModelSrc=converted/${fileName}/enterprise1/model.json) | [Enterprise Pipeline 1](${enterprisePipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |`);
         }
 
         fs.writeFileSync("./index.md", m.join("\n"));
