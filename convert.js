@@ -14,7 +14,8 @@ const configs = JSON.parse(configsData);
         const date = new Date();
         const files = await fs.promises.readdir(ifcDir);
 
-        const m = [`Last run at: ${date}\n`];
+        const m = [`* [Source code](https://github.com/xeokit/xeokit-pipeline)`,
+            `* Last run at: ${date}\n`];
 
         for (const file of files) {
 
@@ -42,8 +43,10 @@ const configs = JSON.parse(configsData);
             const logCommunity1Path = path.join(community1Dir, `log.txt`);
             const logCommunity1PathAbs = `${__dirname}/${logCommunity1Path}`;
 
+            const ll = `https://github.com/xeokit/xeokit-pipeline/blob/main/converted/${fileName}/community1/log.txt`;
+
             fs.mkdirSync(community1Dir);
-            fs.appendFileSync(logCommunity1PathAbs, `#----------------------------------------------------------------------------
+            fs.writeFileSync(logCommunity1PathAbs, `#----------------------------------------------------------------------------
 # Community Pipeline 1 Log
 #
 # ${date}
@@ -51,7 +54,7 @@ const configs = JSON.parse(configsData);
 # Converting file: ${file}
 # Using tools: IfcConvert, xeokit-metadata and convert2xkt
 # More info: 
-#----------------------------------------------------------------------------\n`);
+#----------------------------------------------------------------------------\n`, {encoding: 'utf8'});
 
             fs.appendFileSync(logCommunity1PathAbs, `\n\n# IfcConvert\n\n${configs.paths["IfcConvert"]} ${ifcPathAbs} ${glbCommunity1PathAbs} --no-progress --generate-uvs --force-space-transparency 0.4 --door-arcs\n`);
             execSync(`${configs.paths["IfcConvert"]} ${ifcPathAbs} ${glbCommunity1PathAbs} --no-progress --generate-uvs --force-space-transparency 0.4 -v >> ${logCommunity1PathAbs}`, {stdio: 'inherit'});
@@ -70,13 +73,13 @@ const configs = JSON.parse(configsData);
 
             fs.mkdirSync(community2Dir);
 
-            fs.appendFileSync(logCommunity2PathAbs, `#----------------------------------------------------------------------------
+            fs.writeFileSync(logCommunity2PathAbs, `#----------------------------------------------------------------------------
 # Community Pipeline 2 Log
 #
 # Converting file: ${file}
 # Using tools: convert2xkt
 # Date: ${date}
-#----------------------------------------------------------------------------\n\n\n`);
+#----------------------------------------------------------------------------\n\n\n`, {encoding: 'utf8'});
 
             execSync(`node ${configs.paths["convert2xkt"]} -s ${ifcPathAbs} -o ${xktcommunity2PathAbs} -l >> ${logCommunity2PathAbs}`, {stdio: 'inherit'});
 
@@ -94,15 +97,15 @@ const configs = JSON.parse(configsData);
 
             fs.mkdirSync(enterprise1Dir);
 
-            fs.appendFileSync(logEnterprise1PathAbs, `#----------------------------------------------------------------------------
+            fs.writeFileSync(logEnterprise1PathAbs, `#----------------------------------------------------------------------------
 # Enterprise Pipeline 1 Log
 #
 # Converting file: ${file}
 # Using tools: ifc2gltf and convert2xkt
 # Date: ${date}
-#----------------------------------------------------------------------------\n`);
+#----------------------------------------------------------------------------\n\n`, {encoding: 'utf8'});
 
-            fs.appendFileSync(logEnterprise1PathAbs, `\n\n# ifc2gltf\n\n${configs.paths["ifc2gltf"]} ${ifcPathAbs} -i ${ifcPathAbs} -o ${glbEnterprise1PathAbs} -m ${jsonEnterprise1PathAbs} \n`);
+            fs.appendFileSync(logEnterprise1PathAbs, `\n\n# ifc2gltf\n\n${configs.paths["ifc2gltf"]} -i ${ifcPathAbs} -o ${glbEnterprise1PathAbs} -m ${jsonEnterprise1PathAbs}\n`);
             execSync(`${configs.paths["ifc2gltf"]} -i ${ifcPathAbs} -o ${glbEnterprise1PathAbs} -m ${jsonEnterprise1PathAbs} >> ${logEnterprise1PathAbs}`, {stdio: 'inherit'});
 
             fs.appendFileSync(logEnterprise1PathAbs, `\n\n# convert2xkt\n\n${configs.paths["convert2xkt"]} -s ${glbEnterprise1PathAbs} -m ${jsonEnterprise1PathAbs} -o ${xktEnterprise1PathAbs} -l \n`);
@@ -121,11 +124,11 @@ const configs = JSON.parse(configsData);
 | [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline 1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
 | [.glb](viewModel.html?src=converted/${fileName}/community1/model.glb) | [Community Pipeline 1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
 | [.glb](viewModel.html?src=converted/${fileName}/enterprise1/model.glb) | [Enterprise Pipeline 1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
-| [.glb + .json](viewModel.html?src=converted/${fileName}/community1/model.glb&metaModelSrc=converted/${fileName}/community1/model.json) | [Community Pipeline 1](${communityPipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |
+| [.glb + .json](viewModel.html?src=converted/${fileName}/community1/model.glb&metaModelSrc=converted/${fileName}/community1/model.json) | [Community Pipeline 1](${communityPipeline1Docs})  | [Log](converted/${fileName}/community1/log.txt) |
 | [.glb + .json](viewModel.html?src=converted/${fileName}/enterprise1/model.glb&metaModelSrc=converted/${fileName}/enterprise1/model.json) | [Enterprise Pipeline 1](${enterprisePipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |`);
         }
 
-        fs.writeFileSync("./index.md", m.join("\n"));
+        fs.writeFileSync("./index.md", m.join("\n"), {encoding: 'utf8'});
 
     } catch (e) {
         console.error("We've thrown! Whoops!", e);
