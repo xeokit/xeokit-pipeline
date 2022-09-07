@@ -3,7 +3,7 @@
 #
 # Converting file: rac_advanced_sample_project.ifc
 # Using tools: convert2xkt
-# Date: Thu Sep 08 2022 00:51:57 GMT+0200 (Central European Summer Time)
+# Date: Thu Sep 08 2022 01:40:52 GMT+0200 (Central European Summer Time)
 #----------------------------------------------------------------------------
 
 
@@ -295,7 +295,7 @@ unexpected style type
 [convert2xkt] XKT size: 2041.57 kB
 [convert2xkt] XKT textures size: 0.01kB
 [convert2xkt] Compression ratio: 22.20
-[convert2xkt] Conversion time: 83.00 s
+[convert2xkt] Conversion time: 74.85 s
 [convert2xkt] Converted metaobjects: 5570
 [convert2xkt] Converted property sets: 11420
 [convert2xkt] Converted drawable objects: 5512
