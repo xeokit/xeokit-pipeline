@@ -3,12 +3,12 @@
 #
 # Converting file: rac_advanced_sample_project.ifc
 # Using tools: convert2xkt
-# Date: Wed Sep 07 2022 21:27:34 GMT+0200 (Central European Summer Time)
+# Date: Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
 #----------------------------------------------------------------------------
 
 
 [convert2xkt] Running convert2xkt v1.1.3...
-[convert2xkt] Reading input file: /home/lindsay/xeokit/xeokit-pipeline/ifc/rac_advanced_sample_project.ifc
+[convert2xkt] Reading input file: /home/lindsay/xeokit/converter-tests/tools/xeokit-pipeline/ifc/rac_advanced_sample_project.ifc
 [convert2xkt] Input file size: 45316.70 kB
 [convert2xkt] Using parser: parseIFCIntoXKTModel
 web-ifc: 0.0.34 threading: 0
@@ -295,7 +295,7 @@ unexpected style type
 [convert2xkt] XKT size: 2041.57 kB
 [convert2xkt] XKT textures size: 0.01kB
 [convert2xkt] Compression ratio: 22.20
-[convert2xkt] Conversion time: 53.10 s
+[convert2xkt] Conversion time: 57.31 s
 [convert2xkt] Converted metaobjects: 5570
 [convert2xkt] Converted property sets: 11420
 [convert2xkt] Converted drawable objects: 5512
@@ -307,5 +307,5 @@ unexpected style type
 [convert2xkt] Converted UVs: 0
 [convert2xkt] Converted normals: 0
 [convert2xkt] minTileSize: 200
-[convert2xkt] Writing XKT file: /home/lindsay/xeokit/xeokit-pipeline/converted/rac_advanced_sample_project/community2/model.xkt
+[convert2xkt] Writing XKT file: /home/lindsay/xeokit/converter-tests/tools/xeokit-pipeline/converted/rac_advanced_sample_project/community2/model.xkt
 [convert2xkt] Done.

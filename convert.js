@@ -14,7 +14,7 @@ const configs = JSON.parse(configsData);
         const date = new Date();
         const files = await fs.promises.readdir(ifcDir);
 
-        const m = [];
+        const m = [`${date}`];
 
         for (const file of files) {
 

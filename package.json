@@ -7,9 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Lindsay Kay",
-  "bugs": {
-    "url": "https://github.com/xeokit/xeokit-pipeline/issues"
-  },
-  "license": "AGPL3"
+  "author": "",
+  "license": "ISC"
 }
