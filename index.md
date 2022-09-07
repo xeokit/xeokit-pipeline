@@ -1,5 +1,8 @@
-Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
+Last run at: Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
+
+
 ### Duplex
+
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/Duplex/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
@@ -10,7 +13,9 @@ Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
 | [.glb](viewModel.html?src=converted/Duplex/enterprise1/model.glb) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d) | [Log](converted/Duplex/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/Duplex/community1/model.glb&metaModelSrc=converted/Duplex/community1/model.json) | [Community Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee)  | [Log](converted/Duplex/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/Duplex/enterprise1/model.glb&metaModelSrc=converted/Duplex/enterprise1/model.json) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d)  | [Log](converted/Duplex/enterprise1/log.xkt) |
+
 ### IfcOpenHouse2x3
+
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/IfcOpenHouse2x3/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
@@ -21,7 +26,9 @@ Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
 | [.glb](viewModel.html?src=converted/IfcOpenHouse2x3/enterprise1/model.glb) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d) | [Log](converted/IfcOpenHouse2x3/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/IfcOpenHouse2x3/community1/model.glb&metaModelSrc=converted/IfcOpenHouse2x3/community1/model.json) | [Community Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee)  | [Log](converted/IfcOpenHouse2x3/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/IfcOpenHouse2x3/enterprise1/model.glb&metaModelSrc=converted/IfcOpenHouse2x3/enterprise1/model.json) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d)  | [Log](converted/IfcOpenHouse2x3/enterprise1/log.xkt) |
+
 ### IfcOpenHouse4
+
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/IfcOpenHouse4/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
@@ -32,7 +39,9 @@ Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
 | [.glb](viewModel.html?src=converted/IfcOpenHouse4/enterprise1/model.glb) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d) | [Log](converted/IfcOpenHouse4/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/IfcOpenHouse4/community1/model.glb&metaModelSrc=converted/IfcOpenHouse4/community1/model.json) | [Community Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee)  | [Log](converted/IfcOpenHouse4/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/IfcOpenHouse4/enterprise1/model.glb&metaModelSrc=converted/IfcOpenHouse4/enterprise1/model.json) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d)  | [Log](converted/IfcOpenHouse4/enterprise1/log.xkt) |
+
 ### MAP
+
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/MAP/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
@@ -43,7 +52,9 @@ Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
 | [.glb](viewModel.html?src=converted/MAP/enterprise1/model.glb) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d) | [Log](converted/MAP/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/MAP/community1/model.glb&metaModelSrc=converted/MAP/community1/model.json) | [Community Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee)  | [Log](converted/MAP/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/MAP/enterprise1/model.glb&metaModelSrc=converted/MAP/enterprise1/model.json) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d)  | [Log](converted/MAP/enterprise1/log.xkt) |
+
 ### rac_advanced_sample_project
+
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/rac_advanced_sample_project/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
@@ -54,7 +65,9 @@ Wed Sep 07 2022 23:33:20 GMT+0200 (Central European Summer Time)
 | [.glb](viewModel.html?src=converted/rac_advanced_sample_project/enterprise1/model.glb) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d) | [Log](converted/rac_advanced_sample_project/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/rac_advanced_sample_project/community1/model.glb&metaModelSrc=converted/rac_advanced_sample_project/community1/model.json) | [Community Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee)  | [Log](converted/rac_advanced_sample_project/enterprise1/log.xkt) |
 | [.glb + .json](viewModel.html?src=converted/rac_advanced_sample_project/enterprise1/model.glb&metaModelSrc=converted/rac_advanced_sample_project/enterprise1/model.json) | [Enterprise Pipeline 1](https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d)  | [Log](converted/rac_advanced_sample_project/enterprise1/log.xkt) |
+
 ### rme_advanced_sample_project
+
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/rme_advanced_sample_project/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |

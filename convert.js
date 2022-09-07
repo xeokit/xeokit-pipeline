@@ -14,7 +14,7 @@ const configs = JSON.parse(configsData);
         const date = new Date();
         const files = await fs.promises.readdir(ifcDir);
 
-        const m = [`${date}`];
+        const m = [`Last run at: ${date}\n`];
 
         for (const file of files) {
 
@@ -112,7 +112,7 @@ const configs = JSON.parse(configsData);
             const communityPipeline2Docs = "https://www.notion.so/xeokit/Converting-Models-to-XKT-with-convert2xkt-fa567843313f4db8a7d6535e76da9380";
             const enterprisePipeline1Docs = "https://www.notion.so/xeokit/Converting-IFC-to-XKT-using-ifc2gltf-a2e0005d00dc4f22b648f1237bc3245d";
 
-            m.push(`### ${fileName}
+            m.push(`### ${fileName}\n
 | View Model | Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
 | [.ifc](viewModel.html?src=converted/${fileName}/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
