@@ -3,7 +3,7 @@
 #
 # Converting file: MAP.ifc
 # Using tools: convert2xkt
-# Date: Thu Sep 08 2022 01:40:52 GMT+0200 (Central European Summer Time)
+# Date: Thu Sep 08 2022 03:11:42 GMT+0200 (Central European Summer Time)
 #----------------------------------------------------------------------------
 
 
@@ -373,7 +373,7 @@ unexpected style type
 [convert2xkt] XKT size: 1438.67 kB
 [convert2xkt] XKT textures size: 0.01kB
 [convert2xkt] Compression ratio: 20.00
-[convert2xkt] Conversion time: 57.05 s
+[convert2xkt] Conversion time: 51.71 s
 [convert2xkt] Converted metaobjects: 2017
 [convert2xkt] Converted property sets: 15667
 [convert2xkt] Converted drawable objects: 1986

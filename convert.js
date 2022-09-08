@@ -15,7 +15,8 @@ const configs = JSON.parse(configsData);
         const files = await fs.promises.readdir(ifcDir);
 
         const m = [`* [Source code](https://github.com/xeokit/xeokit-pipeline)`,
-            `* Last run at: ${date}\n`];
+            `\n\n# Conversion Results\n\n`,
+            `* Last run: ${date}\n`];
 
         for (const file of files) {
 
@@ -111,24 +112,26 @@ const configs = JSON.parse(configsData);
             fs.appendFileSync(logEnterprise1PathAbs, `\n\n# convert2xkt\n\n${configs.paths["convert2xkt"]} -s ${glbEnterprise1PathAbs} -m ${jsonEnterprise1PathAbs} -o ${xktEnterprise1PathAbs} -l \n`);
             execSync(`node ${configs.paths["convert2xkt"]} -s ${glbEnterprise1PathAbs} -m ${jsonEnterprise1PathAbs} -o ${xktEnterprise1PathAbs} -l >> ${logEnterprise1PathAbs}`, {stdio: 'inherit'});
 
-            const communityPipeline1Docs = "pipelines#community-pipeline-1";
-            const communityPipeline2Docs = "pipelines#community-pipeline-2";
-            const enterprisePipeline1Docs = "pipelines#enterprise-pipeline-1";
+            const communityPipeline1Docs = "#community-pipeline-1";
+            const communityPipeline2Docs = "#community-pipeline-2";
+            const enterprisePipeline1Docs = "#enterprise-pipeline-1";
 
             m.push(`\n### ${fileName}\n\n
-| View Model | Conversion Pipeline | Conversion Log |
+| View Model | IFC Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
-| [.ifc](viewModel.html?src=converted/${fileName}/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | |
-| [.xkt](viewModel.html?src=converted/${fileName}/community1/model.xkt) | [Community Pipeline #1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
-| [.xkt](viewModel.html?src=converted/${fileName}/community2/model.xkt) | [Community Pipeline #2](${communityPipeline2Docs}) | [Log](converted/${fileName}/community2/log.txt) |
-| [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline #1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
+| [.ifc](viewModel.html?src=converted/${fileName}/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | N/A |
 | [.glb](viewModel.html?src=converted/${fileName}/community1/model.glb) | [Community Pipeline #1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
 | [.glb](viewModel.html?src=converted/${fileName}/enterprise1/model.glb) | [Enterprise Pipeline #1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
 | [.glb + .json](viewModel.html?src=converted/${fileName}/community1/model.glb&metaModelSrc=converted/${fileName}/community1/model.json) | [Community Pipeline #1](${communityPipeline1Docs})  | [Log](converted/${fileName}/community1/log.txt) |
-| [.glb + .json](viewModel.html?src=converted/${fileName}/enterprise1/model.glb&metaModelSrc=converted/${fileName}/enterprise1/model.json) | [Enterprise Pipeline #1](${enterprisePipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |`);
+| [.glb + .json](viewModel.html?src=converted/${fileName}/enterprise1/model.glb&metaModelSrc=converted/${fileName}/enterprise1/model.json) | [Enterprise Pipeline #1](${enterprisePipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |
+| [.xkt](viewModel.html?src=converted/${fileName}/community1/model.xkt) | [Community Pipeline #1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
+| [.xkt](viewModel.html?src=converted/${fileName}/community2/model.xkt) | [Community Pipeline #2](${communityPipeline2Docs}) | [Log](converted/${fileName}/community2/log.txt) |
+| [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline #1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |`);
         }
 
-        fs.writeFileSync("./index.md", m.join("\n"), {encoding: 'utf8'});
+        fs.writeFileSync("./index.md", fs.readFileSync("./assets/intro.md"), {encoding: 'utf8'});
+        fs.appendFileSync("./index.md", m.join("\n"), {encoding: 'utf8'});
+        fs.appendFileSync("./index.md", fs.readFileSync("./assets/pipelines.md"), {encoding: 'utf8'});
 
     } catch (e) {
         console.error("We've thrown! Whoops!", e);

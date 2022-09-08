@@ -3,7 +3,7 @@
 #
 # Converting file: IfcOpenHouse4.ifc
 # Using tools: convert2xkt
-# Date: Thu Sep 08 2022 01:40:52 GMT+0200 (Central European Summer Time)
+# Date: Thu Sep 08 2022 03:11:42 GMT+0200 (Central European Summer Time)
 #----------------------------------------------------------------------------
 
 
@@ -18,7 +18,7 @@ web-ifc: 0.0.34 threading: 0
 [convert2xkt] XKT size: 4.90 kB
 [convert2xkt] XKT textures size: 0.01kB
 [convert2xkt] Compression ratio: 23.13
-[convert2xkt] Conversion time: 0.50 s
+[convert2xkt] Conversion time: 0.30 s
 [convert2xkt] Converted metaobjects: 44
 [convert2xkt] Converted property sets: 0
 [convert2xkt] Converted drawable objects: 34
