@@ -6,7 +6,7 @@ const execSync = require('child_process').execSync;
 const ifcDir = "./ifc";
 const convertedDir = "./converted";
 
-const configsData = fs.readFileSync("./convertconfig.json");
+const configsData = fs.readFileSync("./testdriveconfig.json");
 const configs = JSON.parse(configsData);
 
 (async () => {
@@ -14,9 +14,7 @@ const configs = JSON.parse(configsData);
         const date = new Date();
         const files = await fs.promises.readdir(ifcDir);
 
-        const m = [`* [Source code](https://github.com/xeokit/xeokit-pipeline)`,
-            `\n\n# Results\n\n`,
-            `* Updated: ${date}\n`];
+        const m = [`\n\n* Updated: ${date}\n\n`];
 
         for (const file of files) {
 
