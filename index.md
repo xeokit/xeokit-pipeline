@@ -108,7 +108,9 @@ TODO
 | [.xkt](viewModel.html?src=converted/rme_advanced_sample_project/community2/model.xkt) | [Community Pipeline #2](#community-pipeline-2) | [Log](converted/rme_advanced_sample_project/community2/log.txt) |
 | [.xkt](viewModel.html?src=converted/rme_advanced_sample_project/enterprise1/model.xkt)| [Enterprise Pipeline #1](#enterprise-pipeline-1) | [Log](converted/rme_advanced_sample_project/enterprise1/log.txt) |# Appendix: IFC-to-XKT Conversion Pipelines
 
----
+
+# Appendix: IFC-to-XKT Conversion Pipelines
+
 There are several pipelines through which we can import an IFC file into a xeokit Viewer.
 
 ## WebIFCLoaderPlugin
