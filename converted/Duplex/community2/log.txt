@@ -3,7 +3,7 @@
 #
 # Converting file: Duplex.ifc
 # Using tools: convert2xkt
-# Date: Thu Sep 08 2022 03:11:42 GMT+0200 (Central European Summer Time)
+# Date: Thu Sep 08 2022 03:43:15 GMT+0200 (Central European Summer Time)
 #----------------------------------------------------------------------------
 
 
@@ -18,7 +18,7 @@ web-ifc: 0.0.34 threading: 0
 [convert2xkt] XKT size: 144.96 kB
 [convert2xkt] XKT textures size: 0.01kB
 [convert2xkt] Compression ratio: 16.06
-[convert2xkt] Conversion time: 6.90 s
+[convert2xkt] Conversion time: 4.22 s
 [convert2xkt] Converted metaobjects: 233
 [convert2xkt] Converted property sets: 1369
 [convert2xkt] Converted drawable objects: 224

@@ -1,5 +1,5 @@
 
-# Appendix: IFC-to-XKT Conversion Pipelines
+# Pipelines
 
 ---
 There are several pipelines through which we can import an IFC file into a xeokit Viewer.

@@ -3,7 +3,7 @@
 #
 # Converting file: rme_advanced_sample_project.ifc
 # Using tools: convert2xkt
-# Date: Thu Sep 08 2022 03:11:42 GMT+0200 (Central European Summer Time)
+# Date: Thu Sep 08 2022 03:43:15 GMT+0200 (Central European Summer Time)
 #----------------------------------------------------------------------------
 
 
@@ -313,7 +313,7 @@ unexpected style type
 [convert2xkt] XKT size: 1728.28 kB
 [convert2xkt] XKT textures size: 0.01kB
 [convert2xkt] Compression ratio: 20.43
-[convert2xkt] Conversion time: 133.31 s
+[convert2xkt] Conversion time: 90.36 s
 [convert2xkt] Converted metaobjects: 6449
 [convert2xkt] Converted property sets: 16570
 [convert2xkt] Converted drawable objects: 6401

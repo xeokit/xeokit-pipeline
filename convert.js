@@ -15,8 +15,8 @@ const configs = JSON.parse(configsData);
         const files = await fs.promises.readdir(ifcDir);
 
         const m = [`* [Source code](https://github.com/xeokit/xeokit-pipeline)`,
-            `\n\n# Conversion Results\n\n`,
-            `* Last run: ${date}\n`];
+            `\n\n# Results\n\n`,
+            `* Updated: ${date}\n`];
 
         for (const file of files) {
 
@@ -119,14 +119,14 @@ const configs = JSON.parse(configsData);
             m.push(`\n### ${fileName}\n\n
 | View Model | IFC Conversion Pipeline | Conversion Log |
 | --- | --- | --- |
-| [.ifc](viewModel.html?src=converted/${fileName}/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | N/A |
+| [.ifc](viewModel.html?src=converted/${fileName}/model.ifc) | [WebIFCLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/WebIFCLoaderPlugin/WebIFCLoaderPlugin.js~WebIFCLoaderPlugin.html) | NA |
 | [.glb](viewModel.html?src=converted/${fileName}/community1/model.glb) | [Community Pipeline #1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
 | [.glb](viewModel.html?src=converted/${fileName}/enterprise1/model.glb) | [Enterprise Pipeline #1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |
 | [.glb + .json](viewModel.html?src=converted/${fileName}/community1/model.glb&metaModelSrc=converted/${fileName}/community1/model.json) | [Community Pipeline #1](${communityPipeline1Docs})  | [Log](converted/${fileName}/community1/log.txt) |
 | [.glb + .json](viewModel.html?src=converted/${fileName}/enterprise1/model.glb&metaModelSrc=converted/${fileName}/enterprise1/model.json) | [Enterprise Pipeline #1](${enterprisePipeline1Docs})  | [Log](converted/${fileName}/enterprise1/log.txt) |
 | [.xkt](viewModel.html?src=converted/${fileName}/community1/model.xkt) | [Community Pipeline #1](${communityPipeline1Docs}) | [Log](converted/${fileName}/community1/log.txt) |
 | [.xkt](viewModel.html?src=converted/${fileName}/community2/model.xkt) | [Community Pipeline #2](${communityPipeline2Docs}) | [Log](converted/${fileName}/community2/log.txt) |
-| [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline #1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |`);
+| [.xkt](viewModel.html?src=converted/${fileName}/enterprise1/model.xkt)| [Enterprise Pipeline #1](${enterprisePipeline1Docs}) | [Log](converted/${fileName}/enterprise1/log.txt) |\n`);
         }
 
         fs.writeFileSync("./index.md", fs.readFileSync("./assets/intro.md"), {encoding: 'utf8'});

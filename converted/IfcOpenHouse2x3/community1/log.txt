@@ -1,7 +1,7 @@
 #----------------------------------------------------------------------------
 # Community Pipeline 1 Log
 #
-# Thu Sep 08 2022 03:11:42 GMT+0200 (Central European Summer Time)
+# Thu Sep 08 2022 03:43:15 GMT+0200 (Central European Summer Time)
 #
 # Converting file: IfcOpenHouse2x3.ifc
 # Using tools: IfcConvert, xeokit-metadata and convert2xkt
@@ -17,42 +17,42 @@ Creating geometry...
 Done creating geometry (35 objects)                                
 
 Log:
-[Notice] [2022-09-08 03:11:55] exclude entities IfcOpeningElement IfcSpace
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Operand A 1/1 is an extrusion
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Operand B 1/2 is an extrusion
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Operand B creates a through hole
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Operand B 2/2 is an extrusion
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Operand B creates a through hole
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Intersecting boundaries
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {38MvAlC2H7RhTum1r0FJFg} Processed fully in 2D
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand A 1/1 is an extrusion
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand B 1/2 is an extrusion
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand B creates a through hole
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand B 2/2 is an extrusion
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand B creates a through hole
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Intersecting boundaries
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Processed fully in 2D
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand A 1/1 is an extrusion
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand B 1/1 is an extrusion
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Operand B creates a through hole
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Intersecting boundaries
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {2XjjioqkD00gotrGmqpPnw} Processed fully in 2D
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Operand A 1/1 is an extrusion
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Operand B 1/1 is an extrusion
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Operand B creates a through hole
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Intersecting boundaries
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Used fuzziness: 0.000000
-[Notice] [2022-09-08 03:11:55] {15HQrV8WX2nud_EOSSfoGz} Processed fully in 2D
+[Notice] [2022-09-08 03:43:25] exclude entities IfcOpeningElement IfcSpace
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Operand A 1/1 is an extrusion
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Operand B 1/2 is an extrusion
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Operand B creates a through hole
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Operand B 2/2 is an extrusion
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Operand B creates a through hole
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Intersecting boundaries
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {38MvAlC2H7RhTum1r0FJFg} Processed fully in 2D
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand A 1/1 is an extrusion
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand B 1/2 is an extrusion
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand B creates a through hole
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand B 2/2 is an extrusion
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand B creates a through hole
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Intersecting boundaries
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Processed fully in 2D
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand A 1/1 is an extrusion
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand B 1/1 is an extrusion
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Operand B creates a through hole
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Intersecting boundaries
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {2XjjioqkD00gotrGmqpPnw} Processed fully in 2D
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Operand A 1/1 is an extrusion
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Operand B 1/1 is an extrusion
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Operand B creates a through hole
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Intersecting boundaries
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Used fuzziness: 0.000000
+[Notice] [2022-09-08 03:43:25] {15HQrV8WX2nud_EOSSfoGz} Processed fully in 2D
 
 
-Conversion took 0 seconds
+Conversion took 1 second
 
 
 # xeokit-metadata
